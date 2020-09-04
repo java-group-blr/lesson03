@@ -40,7 +40,7 @@ public class CalculatorTest {
         int random1 = (int) (Math.random() * 100000);
         int random2 = (int) (Math.random() * 100000);
         Assert.assertEquals(random1 + " / " + random2 + " = " + (random1 / random2),
-                random1 / random2, calculator.division(random1, random2));
+                random1 / random2, calculator.division(random1, random2), 0.000001);
     }
 
 
